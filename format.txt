@@ -1,0 +1,37 @@
+// header, 36 bytes
+char magick[4]; // "BPUL"
+uint unk1;      // 36, (header size or data offset??)
+uint unk2[5];   // 1, -1, 0, 0, 1
+
+uint entry_offset;  // absolute
+uint entry_size;    // entry_offset + entry_size = EOF
+
+// data
+char filedata[xxx]; // FOURCC can be "LZ4 " or other
+
+// file desc
+struct dir_entry[xxx] {
+    uint ptr;   // entry[ptr] -> next item, 
+    uint attr;  // 0 - directory, 1 - file
+    short sz;
+    char name[sz]   // name of current dir or file
+}
+
+// entry_offset
+struct entry[xxx] {   // xxx = entry_size >> 3
+    uint offset;        // absolute, pointer to dir_entry (included dir, file or filedata)
+    uint size;          // size of dir_entry or zsize of file
+}
+
+
+char magik[4];          // "LZ4\x20"
+uint size;              // unpacked size
+uint block_size;        // 2^17
+uint h_size;            // header size; if size==0, then EOF here
+uint chunk_offset[xxx]; // xxx = (h_size - 16) >> 2, absolute offsets of chunk begins
+
+struct chunk[xxx] {     // offset = h_size
+    char lz_data[];     // full LZ4 block (unpacked == block_size)
+}
+char lz_data_tail[];    // partial LZ4 block (unpacked < block_size)
+
