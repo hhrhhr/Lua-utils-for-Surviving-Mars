@@ -1,0 +1,254 @@
+body {
+    background-image: url(img/rm_background.webp);
+    background-repeat: repeat;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+table { border-collapse: collapse; }
+th, td { border: 1px solid grey; padding: 0.25em; }
+td { vertical-align: top; }
+
+.th_cost { width: 5em; }
+.th_category {
+    height: 2em;
+    vertical-align: bottom;
+}
+
+.name {  }
+.description { display: inline; font-size: smaller; }
+.description em { font-weight: bold; color: yellow; }
+/*
+.text { font-size: smaller;}
+.p_center { margin: 0; text-align: center; }
+.p_normal { text-align: justify; }
+*/
+.icon, .res {
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.icon {
+    width: 116px;
+    height: 100px;
+    background-image: url(img/buildings.webp);
+    zoom: 0.5;
+}
+.icon:hover { background-image: url(img/buildings_hover.webp); }
+.res {
+    width: 30px;
+    height: 30px;
+    background-image: url(img/res.webp);
+    zoom: 0.75;
+    vertical-align: middle;
+}
+.cost { /*vertical-align: top;*/ }
+
+/*** building icons ***/
+.academy_of_science { background-position: -0px -0px; }
+.amphitheater { background-position: -116px -0px; }
+.anomaly { background-position: -232px -0px; }
+.apartments { background-position: -348px -0px; }
+.arcology { background-position: -464px -0px; }
+.artificial_sun { background-position: -580px -0px; }
+.atomic_batteries { background-position: -696px -0px; }
+.black_cube_dump_site { background-position: -812px -0px; }
+.black_cube_monolith { background-position: -0px -100px; }
+.black_cube_monument_large { background-position: -116px -100px; }
+.black_cube_monument_small { background-position: -232px -100px; }
+.boomerang_garden { background-position: -348px -100px; }
+.box_concrete { background-position: -464px -100px; }
+.box_food { background-position: -580px -100px; }
+.box_metals { background-position: -696px -100px; }
+.box_polymers { background-position: -812px -100px; }
+.casino_complex { background-position: -0px -200px; }
+.cloning_vats { background-position: -116px -200px; }
+.concrete_storage { background-position: -232px -200px; }
+.crops_algae { background-position: -348px -200px; }
+.crops_apples { background-position: -464px -200px; }
+.crops_corn { background-position: -580px -200px; }
+.crops_corn_giant { background-position: -696px -200px; }
+.crops_cucumber { background-position: -812px -200px; }
+.crops_cure_crop { background-position: -0px -300px; }
+.crops_empty { background-position: -116px -300px; }
+.crops_herbs { background-position: -232px -300px; }
+.crops_kelp { background-position: -348px -300px; }
+.crops_leaf { background-position: -464px -300px; }
+.crops_leaf_giant { background-position: -580px -300px; }
+.crops_pea { background-position: -696px -300px; }
+.crops_potato { background-position: -812px -300px; }
+.crops_potato_giant { background-position: -0px -400px; }
+.crops_quinoa { background-position: -116px -400px; }
+.crops_radish { background-position: -232px -400px; }
+.crops_rapeseed { background-position: -348px -400px; }
+.crops_rice { background-position: -464px -400px; }
+.crops_rice_giant { background-position: -580px -400px; }
+.crops_silk_trees { background-position: -696px -400px; }
+.crops_soybeans { background-position: -812px -400px; }
+.crops_strawberry { background-position: -0px -500px; }
+.crops_tomato { background-position: -116px -500px; }
+.crops_wheat { background-position: -232px -500px; }
+.crops_wheat_giant { background-position: -348px -500px; }
+.crops_wheat_grass { background-position: -464px -500px; }
+.crops_wheat_grass_giant { background-position: -580px -500px; }
+.crops_zucchini { background-position: -696px -500px; }
+.defense_turret { background-position: -812px -500px; }
+.deposit_concrete { background-position: -0px -600px; }
+.deposit_metal { background-position: -116px -600px; }
+.deposit_polymers { background-position: -232px -600px; }
+.deposit_rare_metals { background-position: -348px -600px; }
+.deposit_subsurface_metals { background-position: -464px -600px; }
+.deposit_water { background-position: -580px -600px; }
+.dinner { background-position: -696px -600px; }
+.dome { background-position: -812px -600px; }
+.drone { background-position: -0px -700px; }
+.drone_hub { background-position: -116px -700px; }
+.dumping_site { background-position: -232px -700px; }
+.electronics_factory { background-position: -348px -700px; }
+.electronics_storage { background-position: -464px -700px; }
+.electronics_store { background-position: -580px -700px; }
+.farm { background-position: -696px -700px; }
+.food_storage { background-position: -812px -700px; }
+.fuel_cell { background-position: -0px -800px; }
+.fuel_rafinery { background-position: -116px -800px; }
+.fuel_storage { background-position: -232px -800px; }
+.fungal_farm { background-position: -348px -800px; }
+.fusion_reactor { background-position: -464px -800px; }
+.geoscape_dome { background-position: -580px -800px; }
+.grand_dome { background-position: -696px -800px; }
+.grocery { background-position: -812px -800px; }
+.hanging_gardens { background-position: -0px -900px; }
+.hydroponics_farm { background-position: -116px -900px; }
+.infirmary { background-position: -232px -900px; }
+.jewelry_store { background-position: -348px -900px; }
+.lake { background-position: -464px -900px; }
+.lamp { background-position: -580px -900px; }
+.large_fountain { background-position: -696px -900px; }
+.living_quarters { background-position: -812px -900px; }
+.long_garden { background-position: -0px -1000px; }
+.machine_parts_factory { background-position: -116px -1000px; }
+.machine_parts_storage { background-position: -232px -1000px; }
+.martian_university { background-position: -348px -1000px; }
+.mds_aser { background-position: -464px -1000px; }
+.medical_center { background-position: -580px -1000px; }
+.medium_alleys { background-position: -696px -1000px; }
+.medium_garden { background-position: -812px -1000px; }
+.mega_dome { background-position: -0px -1100px; }
+.metals_extractor { background-position: -116px -1100px; }
+.metal_storage { background-position: -232px -1100px; }
+.mirror_sphere { background-position: -348px -1100px; }
+.mohole_mine { background-position: -464px -1100px; }
+.moisture_vaporator { background-position: -580px -1100px; }
+.moxie { background-position: -696px -1100px; }
+.mystery_resource_storage { background-position: -812px -1100px; }
+.network_node { background-position: -0px -1200px; }
+.numbers_01 { background-position: -116px -1200px; }
+.numbers_02 { background-position: -232px -1200px; }
+.numbers_03 { background-position: -348px -1200px; }
+.numbers_04 { background-position: -464px -1200px; }
+.numbers_05 { background-position: -580px -1200px; }
+.numbers_06 { background-position: -696px -1200px; }
+.numbers_07 { background-position: -812px -1200px; }
+.numbers_08 { background-position: -0px -1300px; }
+.nursery { background-position: -116px -1300px; }
+.omega_telescope { background-position: -232px -1300px; }
+.open_air_gym { background-position: -348px -1300px; }
+.orbital_drop { background-position: -464px -1300px; }
+.orbital_probe { background-position: -580px -1300px; }
+.oval_dome { background-position: -696px -1300px; }
+.oxygen_tank { background-position: -812px -1300px; }
+.pipes { background-position: -0px -1400px; }
+.pipe_valve { background-position: -116px -1400px; }
+.placeholder { background-position: -232px -1400px; }
+.playground { background-position: -348px -1400px; }
+.polymers_storage { background-position: -464px -1400px; }
+.polymer_dome { background-position: -580px -1400px; }
+.polymer_plant { background-position: -696px -1400px; }
+.power_cables { background-position: -812px -1400px; }
+.power_decoy { background-position: -0px -1500px; }
+.power_switch { background-position: -116px -1500px; }
+.projector_lamp { background-position: -232px -1500px; }
+.project_morpheus { background-position: -348px -1500px; }
+.rare_metals_storage { background-position: -464px -1500px; }
+.rcrover { background-position: -580px -1500px; }
+.recharge_station { background-position: -696px -1500px; }
+.regolith_extractor { background-position: -812px -1500px; }
+.research_lab { background-position: -0px -1600px; }
+.res_all { background-position: -116px -1600px; }
+.res_black_cube { background-position: -232px -1600px; }
+.res_concrete { background-position: -348px -1600px; }
+.res_electricity { background-position: -464px -1600px; }
+.res_electronics { background-position: -580px -1600px; }
+.res_food { background-position: -696px -1600px; }
+.res_fuel { background-position: -812px -1600px; }
+.res_machine_parts { background-position: -0px -1700px; }
+.res_metals { background-position: -116px -1700px; }
+.res_mystery_resource { background-position: -232px -1700px; }
+.res_oxygen { background-position: -348px -1700px; }
+.res_polymers { background-position: -464px -1700px; }
+.res_precious_metals { background-position: -580px -1700px; }
+.res_shuttle { background-position: -696px -1700px; }
+.res_waste_rock { background-position: -812px -1700px; }
+.res_water { background-position: -0px -1800px; }
+.rocket { background-position: -116px -1800px; }
+.rocket_trade { background-position: -232px -1800px; }
+.rover_combat { background-position: -348px -1800px; }
+.rover_constructor { background-position: -464px -1800px; }
+.rover_human { background-position: -580px -1800px; }
+.rover_transport { background-position: -696px -1800px; }
+.salvage { background-position: -812px -1800px; }
+.sanatorium { background-position: -0px -1900px; }
+.school { background-position: -116px -1900px; }
+.security_station { background-position: -232px -1900px; }
+.sensor_tower { background-position: -348px -1900px; }
+.shuttle { background-position: -464px -1900px; }
+.shuttle_hub { background-position: -580px -1900px; }
+.small_alleys { background-position: -696px -1900px; }
+.small_fountain { background-position: -812px -1900px; }
+.small_garden { background-position: -0px -2000px; }
+.smart homes { background-position: -116px -2000px; }
+.smart_home { background-position: -232px -2000px; }
+.solar_aray { background-position: -348px -2000px; }
+.solar_panel { background-position: -464px -2000px; }
+.spacebar { background-position: -580px -2000px; }
+.spaceport { background-position: -696px -2000px; }
+.space_elevator { background-position: -812px -2000px; }
+.star_dome { background-position: -0px -2100px; }
+.statue { background-position: -116px -2100px; }
+.stirling_generator { background-position: -232px -2100px; }
+.stone_garden { background-position: -348px -2100px; }
+.storage_depot { background-position: -464px -2100px; }
+.subsurface_heater { background-position: -580px -2100px; }
+.the_excavator { background-position: -696px -2100px; }
+.triboelectric_schrubbe { background-position: -812px -2100px; }
+.tunnel { background-position: -0px -2200px; }
+.universal_extractor { background-position: -116px -2200px; }
+.universal_storage { background-position: -232px -2200px; }
+.water_extractor { background-position: -348px -2200px; }
+.water_reclamation { background-position: -464px -2200px; }
+.water_tank { background-position: -580px -2200px; }
+.wind_turbine { background-position: -696px -2200px; }
+.workshop { background-position: -812px -2200px; }
+
+
+/*** build, maintance, consuption icons ***/
+
+.black_box { background-position: -1px -1px; }
+.colonist { background-position: -33px -1px; }
+.concrete { background-position: -65px -1px; }
+.drone { background-position: -97px -1px; }
+.electricity { background-position: -1px -33px; }
+.electronics { background-position: -33px -33px; }
+.experimental_research { background-position: -65px -33px; }
+.food { background-position: -97px -33px; }
+.fuel { background-position: -1px -65px; }
+.machine_parts { background-position: -33px -65px; }
+.metal { background-position: -65px -65px; }
+.metal_undergrounds { background-position: -97px -65px; }
+.mystery_resource { background-position: -1px -97px; }
+.oxygen { background-position: -33px -97px; }
+.polymers { background-position: -65px -97px; }
+.precious_metals { background-position: -97px -97px; }
+.shuttle { background-position: -129px -1px; }
+.theoretical_research { background-position: -129px -33px; }
+.waste_rock { background-position: -129px -65px; }
+.water { background-position: -129px -97px; }

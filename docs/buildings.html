@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>Surviving Mars Buildings</title>
+<link rel="stylesheet" href="res.css" />
+</head>
+<body><table cols='5'><thead><tr><th>icon</th><th>name</th><th class='th_cost'>build</th><th class='th_cost'>service</th><th>consup</th></tr></thead><tr><th class='th_category' colspan='5'>Decorations</td></tr>
+<tr>
+<td><i class='icon projector_lamp' title='LampProjector'></i></td>
+<td><p class='name'>Projector Lamp</span><p class='description'>Make the Martian night a little brighter.</td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'><i class='res electricity'></i>0.2</span></td>
+</tr>
+<tr>
+<td><i class='icon small_garden' title='GardenNatural_Small'></i></td>
+<td><p class='name'>Small Garden</span><p class='description'>A recreational area with cultivated vegetation.</td>
+<td><span class='cost'><i class='res concrete'></i>2</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon medium_garden' title='GardenNatural_Medium'></i></td>
+<td><p class='name'>Garden</span><p class='description'>A recreational area with cultivated vegetation.</td>
+<td><span class='cost'><i class='res concrete'></i>4</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon small_alleys' title='GardenAlleys_Small'></i></td>
+<td><p class='name'>Small Alleys</span><p class='description'>A beautiful park with alleys and benches.</td>
+<td><span class='cost'><i class='res concrete'></i>2</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon medium_alleys' title='GardenAlleys_Medium'></i></td>
+<td><p class='name'>Alleys</span><p class='description'>A beautiful park with alleys and benches.</td>
+<td><span class='cost'><i class='res concrete'></i>4</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon stone_garden' title='GardenStone'></i></td>
+<td><p class='name'>Stone Garden</span><p class='description'>A tastefully arranged stone garden, following strict Zen rules.</td>
+<td><span class='cost'><i class='res concrete'></i>4</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon lake' title='Lake'></i></td>
+<td><p class='name'>Lake</span><p class='description'>A large lake with refreshingly cool water.</td>
+<td><span class='cost'><i class='res concrete'></i>3</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon small_fountain' title='FountainSmall'></i></td>
+<td><p class='name'>Small Fountain</span><p class='description'>A place for relaxation and recreation.</td>
+<td><span class='cost'><i class='res concrete'></i>2</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon large_fountain' title='FountainLarge'></i></td>
+<td><p class='name'>Fountain</span><p class='description'>A place for relaxation and recreation.</td>
+<td><span class='cost'><i class='res concrete'></i>4</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon statue' title='Statue'></i></td>
+<td><p class='name'>Statue</span><p class='description'>"In honor of the Founders of Mars."</td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon black_cube_monument_small' title='BlackCubeSmallMonument'></i></td>
+<td><p class='name'>Small Monument</span><p class='description'>A decorative monument created from the mysterious Black Cubes. Probably harmless.</td>
+<td><span class='cost'><i class='res black_box'></i>42</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon black_cube_monument_large' title='BlackCubeLargeMonument'></i></td>
+<td><p class='name'>Large Monument</span><p class='description'>A decorative monument created from the mysterious Black Cubes. Definitely not a place of worship.</td>
+<td><span class='cost'><i class='res black_box'></i>126</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Dome Services</td></tr>
+<tr>
+<td><i class='icon spacebar' title='Spacebar'></i></td>
+<td><p class='name'>Spacebar</span><p class='description'>Provides space for R&R and fancy cocktails.</td>
+<td><span class='cost'><i class='res metal'></i>5<br /><i class='res concrete'></i>15</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon dinner' title='Diner'></i></td>
+<td><p class='name'>Diner</span><p class='description'>Serves the finest dishes on Mars. Now featuring non-plastic tableware.</td>
+<td><span class='cost'><i class='res metal'></i>5<br /><i class='res concrete'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon infirmary' title='Infirmary'></i></td>
+<td><p class='name'>Infirmary</span><p class='description'>Visitors will recover Health and Sanity as long as they are not starving, dehydrated, freezing or suffocating. A Dome with a Medical Building has lower minimum Comfort requirement for births.</td>
+<td><span class='cost'><i class='res concrete'></i>15</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon open_air_gym' title='OpenAirGym'></i></td>
+<td><p class='name'>Open Air Gym</span><p class='description'>Visitors recover a small amount of Health and may become Fit.</td>
+<td><span class='cost'><i class='res metal'></i>10<br /><i class='res polymers'></i>8</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon casino_complex' title='Casino Complex'></i></td>
+<td><p class='name'>Casino Complex</span><p class='description'>A place of luxurious entertainment and questionable morals, helping to bring out the best of humanity.</td>
+<td><span class='cost'><i class='res concrete'></i>40<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'><i class='res electronics'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon security_station' title='SecurityStation'></i></td>
+<td><p class='name'>Security Station</span><p class='description'>Counters crime created by Renegades and reduces Sanity loss from disasters for all residents in the Dome.</td>
+<td><span class='cost'><i class='res metal'></i>5<br /><i class='res concrete'></i>15</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon grocery' title='ShopsFood'></i></td>
+<td><p class='name'>Grocer</span><p class='description'>Distributes hot meals and fresh produce.</td>
+<td><span class='cost'><i class='res concrete'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon jewelry_store' title='ShopsJewelry'></i></td>
+<td><p class='name'>Art Workshop</span><p class='description'>A place to create and enjoy authentic Martian works of art. Consumes Polymers on each visit.</td>
+<td><span class='cost'><i class='res concrete'></i>10<br /><i class='res polymers'></i>2</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon electronics_store' title='ShopsElectronics'></i></td>
+<td><p class='name'>Electronics Store</span><p class='description'>Buy the latest and greatest gadgets Mars has to offer! Consumes Electronics on each visit.</td>
+<td><span class='cost'><i class='res concrete'></i>10<br /><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Dome Spires</td></tr>
+<tr>
+<td><i class='icon arcology' title='Arcology'></i></td>
+<td><p class='name'>Arcology</span><p class='description'>Provides living space for numerous Colonists, granting high Comfort.</td>
+<td><span class='cost'><i class='res concrete'></i>80<br /><i class='res polymers'></i>10</span></td>
+<td><span class='cost'><i class='res polymers'></i>4</span></td>
+<td><span class='cost'><i class='res electricity'></i>20</span></td>
+</tr>
+<tr>
+<td><i class='icon hanging_gardens' title='HangingGardens'></i></td>
+<td><p class='name'>Hanging Gardens</span><p class='description'>A beautiful park complex. Increases the Comfort of all Residences in the Dome.</td>
+<td><span class='cost'><i class='res concrete'></i>40<br /><i class='res polymers'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>4</span></td>
+<td><span class='cost'><i class='res water'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon water_reclamation' title='WaterReclamationSystem'></i></td>
+<td><p class='name'>Water Reclamation System</span><p class='description'>Recycles up to 70% of the Water used in the Dome.</td>
+<td><span class='cost'><i class='res concrete'></i>50<br /><i class='res polymers'></i>10<br /><i class='res machine_parts'></i>5</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>3</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon cloning_vats' title='CloningVats'></i></td>
+<td><p class='name'>Cloning Vats</span><p class='description'>Creates Clones over time. Cloned Colonists grow and age twice as fast.</td>
+<td><span class='cost'><i class='res metal'></i>50<br /><i class='res polymers'></i>20<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'><i class='res polymers'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>30</span></td>
+</tr>
+<tr>
+<td><i class='icon network_node' title='NetworkNode'></i></td>
+<td><p class='name'>Network Node</span><p class='description'>Increases the overall Research output of the Dome.</td>
+<td><span class='cost'><i class='res metal'></i>50<br /><i class='res concrete'></i>50<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>20</span></td>
+</tr>
+<tr>
+<td><i class='icon medical_center' title='MedicalCenter'></i></td>
+<td><p class='name'>Medical Center</span><p class='description'>Visitors will recover Health and Sanity as long as they are not starving, dehydrated, freezing or suffocating. Larger capacity and more effective than the Infirmary. A Dome with a Medical Building has lower minimum Comfort requirement for births.</td>
+<td><span class='cost'><i class='res metal'></i>30<br /><i class='res concrete'></i>30<br /><i class='res polymers'></i>10</span></td>
+<td><span class='cost'><i class='res polymers'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>20</span></td>
+</tr>
+<tr>
+<td><i class='icon sanatorium' title='Sanatorium'></i></td>
+<td><p class='name'>Sanatorium</span><p class='description'>Treats Colonists for flaws through advanced and (mostly humane) medical practices.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res concrete'></i>50<br /><i class='res polymers'></i>10</span></td>
+<td><span class='cost'><i class='res polymers'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>20</span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Domes</td></tr>
+<tr>
+<td><i class='icon black_cube_monolith' title='BlackCubeMonolith'></i></td>
+<td><p class='name'>Mega Monument</span><p class='description'>A gigantic structure made of Black Cubes.</td>
+<td><span class='cost'><i class='res black_box'></i>284</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon dome' title='DomeBasic'></i></td>
+<td><p class='name'>Basic Dome</span><p class='description'>A small Dome suitable for the early days of the Colony.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res concrete'></i>80<br /><i class='res polymers'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>15<br /><i class='res oxygen'></i>1<br /><i class='res water'></i>1</span></td>
+</tr>
+<tr>
+<td><i class='icon oval_dome' title='DomeMedium'></i></td>
+<td><p class='name'>Medium Dome</span><p class='description'>A medium-sized Dome design.</td>
+<td><span class='cost'><i class='res metal'></i>80<br /><i class='res concrete'></i>150<br /><i class='res polymers'></i>25</span></td>
+<td><span class='cost'><i class='res polymers'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>30<br /><i class='res oxygen'></i>2<br /><i class='res water'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon mega_dome' title='DomeMega'></i></td>
+<td><p class='name'>Mega Dome</span><p class='description'>The most advanced and spacious Dome design.</td>
+<td><span class='cost'><i class='res metal'></i>200<br /><i class='res concrete'></i>300<br /><i class='res polymers'></i>100</span></td>
+<td><span class='cost'><i class='res polymers'></i>5</span></td>
+<td><span class='cost'><i class='res electricity'></i>50<br /><i class='res oxygen'></i>4<br /><i class='res water'></i>4</span></td>
+</tr>
+<tr>
+<td><i class='icon polymer_dome' title='DomeOval'></i></td>
+<td><p class='name'>Oval Dome</span><p class='description'>An elongated Dome design which has space for two Spires.</td>
+<td><span class='cost'><i class='res metal'></i>150<br /><i class='res concrete'></i>150<br /><i class='res polymers'></i>100</span></td>
+<td><span class='cost'><i class='res polymers'></i>4</span></td>
+<td><span class='cost'><i class='res electricity'></i>40<br /><i class='res oxygen'></i>2<br /><i class='res water'></i>2</span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Habitats</td></tr>
+<tr>
+<td><i class='icon living_quarters' title='LivingQuarters'></i></td>
+<td><p class='name'>Living Quarters</span><p class='description'>Provides living space. Resting residents recover Comfort faster compared to other Residences.</td>
+<td><span class='cost'><i class='res concrete'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon apartments' title='Apartments'></i></td>
+<td><p class='name'>Apartments</span><p class='description'>Provides living space for Colonists. Cramped quarters grant less Comfort during rest.</td>
+<td><span class='cost'><i class='res concrete'></i>35<br /><i class='res polymers'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>12</span></td>
+</tr>
+<tr>
+<td><i class='icon smart_home' title='SmartHome_Small'></i></td>
+<td><p class='name'>Smart Home</span><p class='description'>Provides a very comfortable living space for Colonists. Residents will recover additional Sanity when resting.</td>
+<td><span class='cost'><i class='res concrete'></i>5<br /><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res electronics'></i>0</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon smart homes' title='SmartHome'></i></td>
+<td><p class='name'>Smart Complex</span><p class='description'>Provide a very comfortable living space for Colonists. Residents will recover additional Sanity when resting.</td>
+<td><span class='cost'><i class='res concrete'></i>15<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>4</span></td>
+</tr>
+<tr>
+<td><i class='icon nursery' title='Nursery'></i></td>
+<td><p class='name'>Nursery</span><p class='description'>Provides living space for children.</td>
+<td><span class='cost'><i class='res concrete'></i>10</span></td>
+<td><span class='cost'><i class='res concrete'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon playground' title='Playground'></i></td>
+<td><p class='name'>Playground</span><p class='description'>Cultivates Perks in Children through special nurturing programs.</td>
+<td><span class='cost'><i class='res polymers'></i>8</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon school' title='School'></i></td>
+<td><p class='name'>School</span><p class='description'>Cultivates desired Perks in children using modern remote learning techniques.</td>
+<td><span class='cost'><i class='res concrete'></i>25<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'><i class='res electronics'></i>2</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon academy_of_science' title='ResearchLab'></i></td>
+<td><p class='name'>Research Lab</span><p class='description'>Generates Research.</td>
+<td><span class='cost'><i class='res concrete'></i>15<br /><i class='res electronics'></i>8</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon research_lab' title='ScienceInstitute'></i></td>
+<td><p class='name'>Science Institute</span><p class='description'>Generates Research faster than a Research Lab.</td>
+<td><span class='cost'><i class='res concrete'></i>30<br /><i class='res polymers'></i>10<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'><i class='res electronics'></i>4</span></td>
+<td><span class='cost'><i class='res electricity'></i>15</span></td>
+</tr>
+<tr>
+<td><i class='icon martian_university' title='MartianUniversity'></i></td>
+<td><p class='name'>Martian University</span><p class='description'>Trains Specialists using modern remote learning techniques.</td>
+<td><span class='cost'><i class='res metal'></i>10<br /><i class='res concrete'></i>30<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>15</span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Hidden</td></tr>
+<tr>
+<td><i class='icon rocket' title='SupplyRocket'></i></td>
+<td><p class='name'>Rocket</span><p class='description'>Delivers cargo or Colonists to Mars. Commands nearby Drones. Contaminates nearby buildings with dust when landing and taking off. Requires <em>Fuel</em> for the return trip to Earth.</td>
+<td><span class='cost'><i class='res metal'></i>60<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon placeholder' title='RocketLandingSite'></i></td>
+<td><p class='name'>Rocket Landing Site</span><p class='description'>The landing site of a Rocket.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon rocket_trade' title='TradeRocket'></i></td>
+<td><p class='name'>Rocket</span><p class='description'>Delivers cargo or Colonists to Mars. Commands nearby Drones. Contaminates nearby buildings with dust when landing and taking off. Requires <em>Fuel</em> for the return trip to Earth.</td>
+<td><span class='cost'><i class='res metal'></i>60<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon mirror_sphere' title='MirrorSphere'></i></td>
+<td><p class='name'>Mirror Sphere</span><p class='description'>A reflective sphere of unknown composition.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon rocket_trade' title='RefugeeRocket'></i></td>
+<td><p class='name'>Rocket</span><p class='description'>Delivers cargo or Colonists to Mars. Commands nearby Drones. Contaminates nearby buildings with dust when landing and taking off. Requires <em>Fuel</em> for the return trip to Earth.</td>
+<td><span class='cost'><i class='res metal'></i>60<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Infrastructure</td></tr>
+<tr>
+<td><i class='icon rcrover' title='RCRoverBuilding'></i></td>
+<td><p class='name'>RC Rover</span><p class='description'>Remote-controlled vehicle that transports, commands and repairs Drones.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon rover_transport' title='RCTransportBuilding'></i></td>
+<td><p class='name'>RC Transport</span><p class='description'>Remote-controlled vehicle that transports resources. Use it to establish permanent supply routes or to gather resources from surface deposits.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon rover_human' title='RCExplorerBuilding'></i></td>
+<td><p class='name'>RC Explorer</span><p class='description'>Remote-controlled exploration vehicle that can analyze Anomalies.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon drone_hub' title='DroneHub'></i></td>
+<td><p class='name'>Drone Hub</span><p class='description'>Controls Drones and allocates them to different tasks.</td>
+<td><span class='cost'><i class='res metal'></i>12<br /><i class='res electronics'></i>8</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>3</span></td>
+</tr>
+<tr>
+<td><i class='icon recharge_station' title='RechargeStation'></i></td>
+<td><p class='name'>Recharge Station</span><p class='description'>Recharges Drone batteries.</td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'><i class='res electricity'></i>0.2</span></td>
+</tr>
+<tr>
+<td><i class='icon sensor_tower' title='SensorTower'></i></td>
+<td><p class='name'>Sensor Tower</span><p class='description'>Boosts scanning speed, especially for nearby sectors. Extends the advance warning for disasters.</td>
+<td><span class='cost'><i class='res metal'></i>1<br /><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon shuttle_hub' title='ShuttleHub'></i></td>
+<td><p class='name'>Shuttle Hub</span><p class='description'>Houses and refuels Shuttles that facilitate long-range resource transportation between Depots and resettling of Colonists between Domes.</td>
+<td><span class='cost'><i class='res concrete'></i>10<br /><i class='res polymers'></i>15<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>10</span></td>
+</tr>
+<tr>
+<td><i class='icon triboelectric_schrubbe' title='TriboelectricScrubber'></i></td>
+<td><p class='name'>Triboelectric Scrubber</span><p class='description'>Emits pulses which reduce the Dust accumulated on buildings in its range.</td>
+<td><span class='cost'><i class='res metal'></i>15<br /><i class='res electronics'></i>5</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>1.8</span></td>
+</tr>
+<tr>
+<td><i class='icon subsurface_heater' title='SubsurfaceHeater'></i></td>
+<td><p class='name'>Subsurface Heater</span><p class='description'>Increases the local temperature in cold areas and protects nearby buildings from Cold Waves.</td>
+<td><span class='cost'><i class='res metal'></i>15<br /><i class='res machine_parts'></i>5</span></td>
+<td><span class='cost'><i class='res metal'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>1.6<br /><i class='res water'></i>1</span></td>
+</tr>
+<tr>
+<td><i class='icon mds_aser' title='MDSLaser'></i></td>
+<td><p class='name'>MDS Laser</span><p class='description'>Destroys any falling meteors in its range. Has a short cooldown between shots.</td>
+<td><span class='cost'><i class='res metal'></i>15<br /><i class='res electronics'></i>5</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>10</span></td>
+</tr>
+<tr>
+<td><i class='icon tunnel' title='Tunnel'></i></td>
+<td><p class='name'>Tunnel</span><p class='description'>The tunnel entrance and exit can connect power and life support grids at different locations and different elevations. Rovers can travel along the tunnels to reach places they otherwise couldn't.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res concrete'></i>80<br /><i class='res machine_parts'></i>30</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon defense_turret' title='DefenceTower'></i></td>
+<td><p class='name'>Defensive Turret</span><p class='description'>A laser-targeting defense structure. Protect nearby buildings from meteors. Can attack enemy vehicles at extreme range.</td>
+<td><span class='cost'><i class='res metal'></i>10<br /><i class='res electronics'></i>5</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>10</span></td>
+</tr>
+<tr>
+<td><i class='icon power_decoy' title='PowerDecoy'></i></td>
+<td><p class='name'>Power Decoy</span><p class='description'>Traps a single Mirror Sphere.</td>
+<td><span class='cost'><i class='res concrete'></i>10<br /><i class='res polymers'></i>5<br /><i class='res electronics'></i>5</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'><i class='res electricity'></i>10</span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Life-Support</td></tr>
+<tr>
+<td><i class='icon moxie' title='MOXIE'></i></td>
+<td><p class='name'>MOXIE</span><p class='description'>Produces Oxygen. No production during Dust Storms.</td>
+<td><span class='cost'><i class='res metal'></i>5</span></td>
+<td><span class='cost'><i class='res metal'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>2</span></td>
+</tr>
+<tr>
+<td><i class='icon oxygen_tank' title='OxygenTank'></i></td>
+<td><p class='name'>Oxygen Tank</span><p class='description'>Stores Oxygen.</td>
+<td><span class='cost'><i class='res metal'></i>3</span></td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon water_extractor' title='WaterExtractor'></i></td>
+<td><p class='name'>Water Extractor</span><p class='description'>Extracts Water from underground deposits. No production during Cold Waves. All extractors contaminate nearby buildings with dust.</td>
+<td><span class='cost'><i class='res concrete'></i>6<br /><i class='res machine_parts'></i>2</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon moisture_vaporator' title='MoistureVaporator'></i></td>
+<td><p class='name'>Moisture Vaporator</span><p class='description'>Produces Water from the atmosphere. Production lowered when placed near other Vaporators. No production during Dust Storms.</td>
+<td><span class='cost'><i class='res metal'></i>2<br /><i class='res polymers'></i>5</span></td>
+<td><span class='cost'><i class='res metal'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon water_tank' title='WaterTank'></i></td>
+<td><p class='name'>Water Tower</span><p class='description'>Stores Water. Doesn't work during Cold Waves.</td>
+<td><span class='cost'><i class='res metal'></i>3</span></td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon pipe_valve' title='LifesupportSwitch'></i></td>
+<td><p class='name'>Pipe Valve</span><p class='description'>Can be manually activated to cut off Water and Oxygen supply.</td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon hydroponics_farm' title='HydroponicFarm'></i></td>
+<td><p class='name'>Hydroponic Farm</span><p class='description'>Produces Food. Consumes Water depending on crop type.</td>
+<td><span class='cost'><i class='res metal'></i>4<br /><i class='res polymers'></i>2</span></td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon farm' title='Farm'></i></td>
+<td><p class='name'>Farm</span><p class='description'>Produces Food. Consumes Water depending on crop type.</td>
+<td><span class='cost'><i class='res concrete'></i>8</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon fungal_farm' title='FungalFarm'></i></td>
+<td><p class='name'>Fungal Farm</span><p class='description'>Produces Food.</td>
+<td><span class='cost'><i class='res metal'></i>15<br /><i class='res concrete'></i>10<br /><i class='res electronics'></i>5</span></td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>10<br /><i class='res oxygen'></i>2<br /><i class='res water'></i>0.5</span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Power</td></tr>
+<tr>
+<td><i class='icon solar_panel' title='SolarPanel'></i></td>
+<td><p class='name'>Solar Panel</span><p class='description'>Generates Power during daytime. Its effectiveness is decreased by dust accumulation and during sand storms. Protected from dust while turned off.</td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'><i class='res metal'></i>0</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon solar_aray' title='SolarPanelBig'></i></td>
+<td><p class='name'>Large Solar Panel</span><p class='description'>Generates Power during daytime. Its effectiveness is decreased by dust accumulation and during Dust Storms. Protected from dust while turned off.</td>
+<td><span class='cost'><i class='res metal'></i>4</span></td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon wind_turbine' title='WindTurbine'></i></td>
+<td><p class='name'>Wind Turbine</span><p class='description'>Generates Power. Increased production during Dust Storms and at high elevations.</td>
+<td><span class='cost'><i class='res concrete'></i>4<br /><i class='res machine_parts'></i>1</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>0</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon stirling_generator' title='StirlingGenerator'></i></td>
+<td><p class='name'>Stirling Generator</span><p class='description'>Generates Power. While closed the generator is protected from dust, but produces less power.</td>
+<td><span class='cost'><i class='res polymers'></i>12<br /><i class='res electronics'></i>6</span></td>
+<td><span class='cost'><i class='res polymers'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon fusion_reactor' title='FusionReactor'></i></td>
+<td><p class='name'>Fusion Reactor</span><p class='description'>Generates significant amounts of Power but requires Workers from a nearby Dome.</td>
+<td><span class='cost'><i class='res concrete'></i>40<br /><i class='res polymers'></i>20<br /><i class='res electronics'></i>20</span></td>
+<td><span class='cost'><i class='res electronics'></i>3</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon fuel_cell' title='Battery_WaterFuelCell'></i></td>
+<td><p class='name'>Power Accumulator</span><p class='description'>Stores Power. Amount of Power supplied is limited by the battery’s max output.</td>
+<td><span class='cost'><i class='res concrete'></i>3<br /><i class='res polymers'></i>2</span></td>
+<td><span class='cost'><i class='res polymers'></i>1</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon atomic_batteries' title='AtomicBattery'></i></td>
+<td><p class='name'>Atomic Accumulator</span><p class='description'>Stores Power. High capacity and max output, but charges slowly.</td>
+<td><span class='cost'><i class='res concrete'></i>5<br /><i class='res polymers'></i>5</span></td>
+<td><span class='cost'><i class='res polymers'></i>2</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon power_switch' title='ElectricitySwitch'></i></td>
+<td><p class='name'>Power Switch</span><p class='description'>Can be manually activated to cut off the Power supply.</td>
+<td><span class='cost'><i class='res metal'></i>1</span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Production</td></tr>
+<tr>
+<td><i class='icon regolith_extractor' title='RegolithExtractor'></i></td>
+<td><p class='name'>Concrete Extractor</span><p class='description'>Extracts sulfurous rich regolith from Concrete deposits and produces Concrete. All extractors contaminate nearby buildings with dust.</td>
+<td><span class='cost'><i class='res metal'></i>6<br /><i class='res machine_parts'></i>2</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon metals_extractor' title='MetalsExtractor'></i></td>
+<td><p class='name'>Metals Extractor</span><p class='description'>Extracts Metals from underground deposits. All extractors contaminate nearby buildings with dust.</td>
+<td><span class='cost'><i class='res concrete'></i>20<br /><i class='res machine_parts'></i>5</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon workshop' title='DroneFactory'></i></td>
+<td><p class='name'>Drone Assembler</span><p class='description'>Produces Drones Prefabs which can then be used to order new drones in Drone Hubs multiplying the obedient workforce of the Colony. Probably not a threat to humans.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res electronics'></i>10</span></td>
+<td><span class='cost'><i class='res electronics'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>10</span></td>
+</tr>
+<tr>
+<td><i class='icon universal_extractor' title='PreciousMetalsExtractor'></i></td>
+<td><p class='name'>Rare Metals Extractor</span><p class='description'>Extracts Rare Metals from underground deposits. All extractors contaminate nearby buildings with dust.</td>
+<td><span class='cost'><i class='res metal'></i>20<br /><i class='res machine_parts'></i>5</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>5</span></td>
+</tr>
+<tr>
+<td><i class='icon polymer_plant' title='PolymerPlant'></i></td>
+<td><p class='name'>Polymer Factory</span><p class='description'>Produces Polymers from Water and Fuel.</td>
+<td><span class='cost'><i class='res metal'></i>5<br /><i class='res concrete'></i>10<br /><i class='res machine_parts'></i>5</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>2<br /><i class='res water'></i>1</span></td>
+</tr>
+<tr>
+<td><i class='icon electronics_factory' title='ElectronicsFactory'></i></td>
+<td><p class='name'>Electronics Factory</span><p class='description'>Creates Electronics from Rare Metals.</td>
+<td><span class='cost'><i class='res metal'></i>5<br /><i class='res concrete'></i>10<br /><i class='res electronics'></i>15</span></td>
+<td><span class='cost'><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>8</span></td>
+</tr>
+<tr>
+<td><i class='icon machine_parts_factory' title='MachinePartsFactory'></i></td>
+<td><p class='name'>Machine Parts Factory</span><p class='description'>Produces Machine Parts from Metals.</td>
+<td><span class='cost'><i class='res metal'></i>10<br /><i class='res concrete'></i>10<br /><i class='res electronics'></i>2</span></td>
+<td><span class='cost'><i class='res electronics'></i>2</span></td>
+<td><span class='cost'><i class='res electricity'></i>30</span></td>
+</tr>
+<tr>
+<td><i class='icon fuel_rafinery' title='FuelFactory'></i></td>
+<td><p class='name'>Fuel Refinery</span><p class='description'>Produces Fuel from Water.</td>
+<td><span class='cost'><i class='res metal'></i>5<br /><i class='res concrete'></i>5<br /><i class='res machine_parts'></i>5</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>1</span></td>
+<td><span class='cost'><i class='res electricity'></i>5<br /><i class='res water'></i>1</span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Storages</td></tr>
+<tr>
+<td><i class='icon universal_storage' title='UniversalStorageDepot'></i></td>
+<td><p class='name'>Universal Depot</span><p class='description'>Stores 30 units of each transportable resource. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon metal_storage' title='StorageMetals'></i></td>
+<td><p class='name'>Metals Depot</span><p class='description'>Stores <i class='res metal'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon concrete_storage' title='StorageConcrete'></i></td>
+<td><p class='name'>Concrete Depot</span><p class='description'>Stores <i class='res concrete'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon food_storage' title='StorageFood'></i></td>
+<td><p class='name'>Food Depot</span><p class='description'>Stores <i class='res food'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon rare_metals_storage' title='StorageRareMetals'></i></td>
+<td><p class='name'>Rare Metals Depot</span><p class='description'>Stores <i class='res precious_metals'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon polymers_storage' title='StoragePolymers'></i></td>
+<td><p class='name'>Polymers Depot</span><p class='description'>Stores <i class='res polymers'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon electronics_storage' title='StorageElectronics'></i></td>
+<td><p class='name'>Electronics Depot</span><p class='description'>Stores <i class='res electronics'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon machine_parts_storage' title='StorageMachineParts'></i></td>
+<td><p class='name'>Machine Parts Depot</span><p class='description'>Stores <i class='res machine_parts'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon fuel_storage' title='StorageFuel'></i></td>
+<td><p class='name'>Fuel Depot</span><p class='description'>Stores <i class='res fuel'></i>180. Excess resources will be delivered automatically to other depots within Drone range.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon dumping_site' title='WasteRockDumpBig'></i></td>
+<td><p class='name'>Dumping Site</span><p class='description'>Stores <i class='res waste_rock'></i>70. Waste Rock is produced as side product of different mining activities.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon black_cube_dump_site' title='BlackCubeDump'></i></td>
+<td><p class='name'>Cube Depot</span><p class='description'>A safe place to store Black Cubes.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon mystery_resource_storage' title='StorageMysteryResource'></i></td>
+<td><p class='name'>Mystery Depot</span><p class='description'>It's very mysterious.</td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr><th class='th_category' colspan='5'>Wonders</td></tr>
+<tr>
+<td><i class='icon omega_telescope' title='OmegaTelescope'></i></td>
+<td><p class='name'>Omega Telescope</span><p class='description'>Peering beyond the veil of the unknown, this radio telescope gives access to new Breakthrough Technologies and boosts overall Research.</td>
+<td><span class='cost'><i class='res metal'></i>300<br /><i class='res concrete'></i>400<br /><i class='res electronics'></i>300</span></td>
+<td><span class='cost'><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>80</span></td>
+</tr>
+<tr>
+<td><i class='icon artificial_sun' title='ArtificialSun'></i></td>
+<td><p class='name'>Artificial Sun</span><p class='description'>This marvel of Martian engineering produces colossal amounts of Power. It provides light for nearby solar panels during the night in addition to heating the surrounding area. Consumes vast amounts of Water on startup.</td>
+<td><span class='cost'><i class='res metal'></i>300<br /><i class='res concrete'></i>200<br /><i class='res polymers'></i>300</span></td>
+<td><span class='cost'><i class='res polymers'></i>3</span></td>
+<td><span class='cost'></span></td>
+</tr>
+<tr>
+<td><i class='icon mohole_mine' title='MoholeMine'></i></td>
+<td><p class='name'>Mohole Mine</span><p class='description'>Mining deep into the crust of Mars, the Mohole Mine produces Metals, Rare Metals and Waste Rock, while heating the surrounding area.</td>
+<td><span class='cost'><i class='res metal'></i>100<br /><i class='res concrete'></i>400<br /><i class='res machine_parts'></i>300</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>40</span></td>
+</tr>
+<tr>
+<td><i class='icon space_elevator' title='SpaceElevator'></i></td>
+<td><p class='name'>Space Elevator</span><p class='description'>A faster way to reach space, the Elevator speeds up cargo shipments to orbit. Exports Rare Metals to Earth and offers resupply materials and prefabs at a discount.</td>
+<td><span class='cost'><i class='res metal'></i>200<br /><i class='res concrete'></i>400<br /><i class='res polymers'></i>150<br /><i class='res machine_parts'></i>150</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>40</span></td>
+</tr>
+<tr>
+<td><i class='icon the_excavator' title='TheExcavator'></i></td>
+<td><p class='name'>The Excavator</span><p class='description'>Using advanced extraction technology, allows for production of Concrete directly from the Martian soil without the requirement for a deposit.</td>
+<td><span class='cost'><i class='res metal'></i>300<br /><i class='res concrete'></i>100<br /><i class='res machine_parts'></i>200</span></td>
+<td><span class='cost'><i class='res machine_parts'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>30</span></td>
+</tr>
+<tr>
+<td><i class='icon project_morpheus' title='ProjectMorpheus'></i></td>
+<td><p class='name'>Project Morpheus</span><p class='description'>With our improved understanding of the human brain we created Project Morpheus. The device uses a combination of psychosomatic triggers and suggestopedic methodology to stimulate the development of new Perks in adult Colonists.</td>
+<td><span class='cost'><i class='res metal'></i>400<br /><i class='res concrete'></i>200<br /><i class='res electronics'></i>300</span></td>
+<td><span class='cost'><i class='res electronics'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>110</span></td>
+</tr>
+<tr>
+<td><i class='icon geoscape_dome' title='GeoscapeDome'></i></td>
+<td><p class='name'>Geoscape Dome</span><p class='description'>A slice of Earth on Mars, this Dome increases the Comfort of all Residences within. It also increases the Sanity of its inhabitants every Sol.</td>
+<td><span class='cost'><i class='res metal'></i>200<br /><i class='res concrete'></i>400<br /><i class='res polymers'></i>300</span></td>
+<td><span class='cost'><i class='res polymers'></i>3</span></td>
+<td><span class='cost'><i class='res electricity'></i>40</span></td>
+</tr>
+</table></body>
